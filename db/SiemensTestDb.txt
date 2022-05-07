@@ -1,0 +1,12 @@
+create database siemensdbtest
+delete database siemensdb
+
+use siemensdbtest
+create table material (matid int primary key, material varchar(100), density int, cost int)
+
+drop table material
+select * from material
+
+insert into material values(2,"aluminium",2710,76)
+insert into material values(3,"Cast Iron",7150,45)
+insert into material values(4,"Steel",8030,43)

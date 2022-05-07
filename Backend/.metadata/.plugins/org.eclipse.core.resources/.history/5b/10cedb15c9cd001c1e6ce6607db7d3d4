@@ -1,0 +1,53 @@
+package com.siemens.siemens.Pojo;
+
+import org.springframework.stereotype.Component;
+
+
+public class Output {
+
+	private int volume;
+	private int weight;
+	private int ucost;
+	private int tmatcost;
+	public int getVolume() {
+		return volume;
+	}
+	public void setVolume(int volume) {
+		this.volume = volume;
+	}
+	public int getWeight() {
+		return weight;
+	}
+	public void setWeight(int weight) {
+		this.weight = weight;
+	}
+	public int getUcost() {
+		return ucost;
+	}
+	public void setUcost(int ucost) {
+		this.ucost = ucost;
+	}
+	public int getTmatcost() {
+		return tmatcost;
+	}
+	public void setTmatcost(int tmatcost) {
+		this.tmatcost = tmatcost;
+	}
+	public Output(int volume, int weight, int ucost, int tmatcost) {
+		super();
+		this.volume = volume;
+		this.weight = weight;
+		this.ucost = ucost;
+		this.tmatcost = tmatcost;
+	}
+	public Output() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "Output [volume=" + volume + ", weight=" + weight + ", ucost=" + ucost + ", tmatcost=" + tmatcost + "]";
+	}
+	
+	
+	
+}

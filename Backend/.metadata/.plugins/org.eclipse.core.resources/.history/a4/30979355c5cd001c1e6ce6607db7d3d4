@@ -1,0 +1,33 @@
+package com.siemens.siemens.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.siemens.siemens.Dao.MaterialDao;
+import com.siemens.siemens.Pojo.Input;
+import com.siemens.siemens.Pojo.Material;
+import com.siemens.siemens.Pojo.Output;
+
+@Service
+@Transactional
+public class UserService {
+
+	@Autowired 
+	Output o;
+	@Autowired
+	MaterialDao mdao;
+	
+	public int getDensitymat(String material) {
+		
+		Material m=mdao.findByMaterial(material);
+	}
+	public Output calculations(Input i) {
+		
+		int vol=(int) 3.14/4*i.getDia()*i.getDia()*i.getLength();
+		o.setVolume(vol);
+		
+		int wght=(int) vol*
+		
+	}
+}

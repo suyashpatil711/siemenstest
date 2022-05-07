@@ -1,0 +1,6 @@
+package com.siemens.siemens.Controller;
+
+@RestController
+public class UserController {
+
+}

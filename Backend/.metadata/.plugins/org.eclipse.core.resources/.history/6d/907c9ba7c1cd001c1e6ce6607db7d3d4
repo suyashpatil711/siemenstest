@@ -1,0 +1,7 @@
+package com.siemens.siemens.Dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MaterialDao extends JpaRepository<T, ID> {
+
+}
