@@ -6,6 +6,8 @@ import com.siemens.siemens.Pojo.Material;
 
 public interface MaterialDao extends JpaRepository<Material, Integer> {
 
+	Material findByMaterial(String material);
+
 	
 
 }

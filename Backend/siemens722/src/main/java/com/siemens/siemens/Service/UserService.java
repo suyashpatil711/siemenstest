@@ -22,15 +22,15 @@ public class UserService {
 	
 	public int getDensitymat(String material) {
 		
-		//Material m=mdao.findByMaterial(material);
-		Material m=mdao.getById(4);
+		Material m=mdao.findByMaterial(material);
+		//Material m=mdao.getById(4);
 		return m.getDensity();
 	}
 	
 public int getCostmat(String material) {
 		
-		//Material m=mdao.findByMaterial(material);
-		Material m=mdao.getById(4);
+	    Material m=mdao.findByMaterial(material);
+		//Material m=mdao.getById(4);
 		
 		return m.getCost();
 	}
